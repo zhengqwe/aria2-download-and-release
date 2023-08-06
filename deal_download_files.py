@@ -13,4 +13,3 @@ for dirpath, dirnames, filenames in os.walk("downloads"):
         )
         print("[deal] %s with %s" % (path.join(dirpath, filename), cmd))
         os.system(cmd)
-        # 删除原始文件
