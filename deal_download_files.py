@@ -14,7 +14,7 @@ for dirpath, dirnames, filenames in os.walk("downloads"):
                 sourcefile=path.join(dirpath, filename)
             )
         else:
-        	cmd = '7z a -t7z -m0=Copy -sccUTF-8 -sdel "{afile}" "{sourcefile}"'.format(
+            cmd = '7z a -t7z -m0=Copy -sccUTF-8 -sdel "{afile}" "{sourcefile}"'.format(
                 afile=path.join('./result', filename + '.7z'),
                 sourcefile=path.join(dirpath, filename)
             )
